@@ -1,4 +1,3 @@
-!DOCTYPE html>
 <html>
         <head>
                 <title>The Room </title>
@@ -9,22 +8,18 @@
                         <h1 align="center"> Welcome to </br> the Room </h1>
                 </div>
 
-        </br></br>
-
         <div id = "image">
-                <center><img src="https://s-media-cache-ak0.pinimg.com/originals/22/3c/2c/223c2cb2$
+                <center><img src="http://robbreport.com/sites/default/files/images/articles/2016Apr/2117531//01-auberge-beach-residences-spa-fort-lauderdale-penthouse.jpg" width="1265" height="375"></div>
         </div>
-       
-	 <div id="Directions">
 
+	</br></br>
+
+	<div id="Directions">
                 <!-- Action will have to point to other room's transporter? -->
-                <form name = "North" action = "cgi-bin/transporter.py" method="post" align = "cent$
+                <form name = "North" action ="cgi-bin/transporter.py" method="post" align ="center">
                         <input type = "submit" value = "North">
-
                 </form>
-
         </br></br>
-
                 <!-- Action will have to point to other room's transporter? -->
                 <form name = "West" action = "cgi-bin/transporter.py" method="post" align="left">
                         <input type = "submit" value = "West">
@@ -34,19 +29,23 @@
                         <input type = "submit" value = "East">
 
                 </form>
-
+	</div>
 
         <div id = "textbox">
 		 <!-- The room.cgi should be the compiled (gcc -o) of room.c -->
-                <form name = "inputTextbox" action = "cgi-bin/room.cgi" method="post" align="cente$
+                <form name="inputTextbox" action="http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi" method="get" align="center">
                         <b>Enter Your Command</b></br>
-                        <input type="text" name="command"></br>
+			<input type="hidden" name="inventory" value="10">
+                        <input type="text" name="command">
                         <input type="submit" value = "Enter">
                 </form>
+	</div>
 
         </br></br>
 
-                <form name = "South" action = "cgi-bin/transporter.py" method = "post" align="cent$
+	<div id="Directions">
+
+                <form name = "South" action = "cgi-bin/transporter.py" method = "post" align="center">
                         <input type = "submit" value = "South">
 
                 </form>

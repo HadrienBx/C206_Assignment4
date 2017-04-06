@@ -4,14 +4,30 @@
 Our home-page link: https://www.cs.mcgill.ca/~hblamp/room
 
 Rooms we are linked to:
+
   N:
-    info
+    Linked to us?:
+    Contact name:
+    URL:
+    transport.py URL:
+    
     
   E:
-    info
+      Linked to us?:
+    Contact name:
+    URL:
+    transport.py URL:
     
   S:
-    info
+      Linked to us?:
+    Contact name:
+    URL:
+    transport.py URL:
     
   W:
-    info
+      Linked to us?:
+    Contact name:
+    URL:
+    transport.py URL:
+  
+  

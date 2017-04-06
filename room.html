@@ -1,0 +1,58 @@
+!DOCTYPE html>
+<html>
+        <head>
+                <title>The Room </title>
+        </head>
+
+        <body style="background-color:lightgrey">
+                <div id="welcome" style="background-color:white">
+                        <h1 align="center"> Welcome to </br> the Room </h1>
+                </div>
+
+        </br></br>
+
+        <div id = "image">
+                <center><img src="https://s-media-cache-ak0.pinimg.com/originals/22/3c/2c/223c2cb2$
+        </div>
+       
+	 <div id="Directions">
+
+                <!-- Action will have to point to other room's transporter? -->
+                <form name = "North" action = "cgi-bin/transporter.py" method="post" align = "cent$
+                        <input type = "submit" value = "North">
+
+                </form>
+
+        </br></br>
+
+                <!-- Action will have to point to other room's transporter? -->
+                <form name = "West" action = "cgi-bin/transporter.py" method="post" align="left">
+                        <input type = "submit" value = "West">
+                </form>
+
+                <form name = "East" action = "cgi-bin/transporter.py" method="post" align="right">
+                        <input type = "submit" value = "East">
+
+                </form>
+
+
+        <div id = "textbox">
+		 <!-- The room.cgi should be the compiled (gcc -o) of room.c -->
+                <form name = "inputTextbox" action = "cgi-bin/room.cgi" method="post" align="cente$
+                        <b>Enter Your Command</b></br>
+                        <input type="text" name="command"></br>
+                        <input type="submit" value = "Enter">
+                </form>
+
+        </br></br>
+
+                <form name = "South" action = "cgi-bin/transporter.py" method = "post" align="cent$
+                        <input type = "submit" value = "South">
+
+                </form>
+        </div>
+
+        </br></br>
+
+	</body>
+</html>

@@ -3,6 +3,8 @@
 
 Our home-page link: https://www.cs.mcgill.ca/~hblamp/room
 
+The login.c is an example of using C to rewrite html pages, as well as parsing and updating csv files.
+
 Rooms we are linked to:
 
   N:

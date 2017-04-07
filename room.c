@@ -4,10 +4,12 @@
 int main(void){
 
   char *string = getenv("QUERY_STRING");
-  int cmd;
-  int inv;
+  char command[12];
+  int mana;
+  int gp;
+  int temp;
 
-  sscanf(string, "cmd=%d&inv=%d", &cmd, &inv);
+  sscanf(string, "command=%[^&]&inventory=%3d%*[^0123456789]%d%*[^0123456789]%3d", command, &mana, &temp, &gp);
 
 
 
@@ -20,12 +22,14 @@ int main(void){
   printf("\t</head>");
   printf("\t<body>");
   printf("\t\t<img src=\"penthouse.jpg\" align=\"top\" width=\"1263\" height=\"500\" />");
-  printf("\t\t<form name=\"textbox\" action=\"www.cs.mcgill.ca/~hblamp/cgi-bin/a.cgi\" method=\"get\" >");
-  printf("\t\t\t<input type=\"text\" name=\"cmd\">");
-  printf("\t\t\t<input type=\"hidden\" name=\"inv\" val=\"6\">");
+  printf("\t\t<form name=\"textbox\" action=\"https://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi\" method=\"get\" >");
+  printf("\t\t\t<input type=\"text\" name=\"command\">");
+  printf("\t\t\t<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">", mana, gp);
   printf("\t\t\t<input type=\"submit\" value=\"Submit\">");
   printf("\t\t</form>");
-  printf("\t\t<p>%d,%d</p>",cmd,inv);
+  printf("\t\t<p>%s</p>",command);
+  printf("\t\t<p>%d</p>",mana);
+  printf("\t\t<p>%d</p>",gp);
   printf("\t</body>");
   printf("</html>");
 

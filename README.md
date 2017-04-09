@@ -15,16 +15,16 @@ Rooms we are linked to:
     
     
   E:
-      Linked to us?:
-    Contact name:
-    URL:
+      Linked to us?: Yes
+    Contact name: David Carrier
+    URL: http://cgi.cs.mcgill.ca/~jdjame/comp_206_game/transporter.py
     transport.py URL:
     
   S:
-      Linked to us?:
-    Contact name:
-    URL:
-    transport.py URL:
+      Linked to us?: Yes
+    Contact name: Noga Aharony
+    URL: 
+    transport.py URL: http://cs.mcgill.ca/~naharo/cgi-bin/transporter.by
     
   W:
       Linked to us?:

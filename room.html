@@ -1,6 +1,6 @@
 <html lang="en">
         <head>
-                <title>The Awesome Room </title>
+                <title>The Room </title>
         </head>
 
         <body style="background-color:lightgrey">
@@ -9,11 +9,11 @@
                 </div>
 
         <div id = "backgroundINV">
-                <center><img src="http://cs.mcgill.ca/~hblamp/penthouse.jpg"></center>
+                <center><img src="http://cs.mcgill.ca/~hblamp/penthouse.jpg" width="1263" height="300"></center>
                 <!-- for when visited directed from url -->
                 <div id="RoomPlayerInventory" align="center">
-                        <p><b>Room Contains:</b> &emsp; &emsp; &emsp; Player Inventory:</p>
-                        <p>Gold: 10 &emsp; &emsp; &emsp; Gold: 0 </br> Mana: 10 &emsp; &emsp; &emsp; Mana: 1 </p>
+                        <p><b>Room Contains:</b> &emsp; &emsp; &emsp; &emsp; &emsp;<b> Player Inventory:</b></p>
+                        <p>Gold: 10 &emsp; &emsp; &emsp; &emsp; &emsp; Gold: 0 </br> Mana: 10 &emsp; &emsp; &emsp; &emsp; &emsp; Mana: 1 </p>
         </div>
 
         </br></br>
@@ -22,20 +22,20 @@
                 <!-- Action will have to point to other room's transporter? -->
                 <form name = "North" action ="http://www.cs.mcgill.ca/~hblamp/cgi-bin/transporter.cgi" method="post" align ="center">
                         <input type = "submit" value = "North">
-                        <input type = "hidden" name = "inventory" value = "10,10">
+                        <input type = "hidden" name = "Pinventory" value = "1,0">
                         <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi">
                 </form>
-        </br></br>
+        </br>
                 <!-- Action will have to point to other room's transporter? -->
                 <form name = "West" action = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/transporter.cgi" method="post" align="left">
                         <input type = "submit" value = "West">
-                        <input type = "hidden" name = "inventory" value = "10,10">
+                        <input type = "hidden" name = "Pinventory" value = "1,0">
                         <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi">
                 </form>
                 <!-- Action will have to point to other room's transporter? -->
                 <form name = "East" action = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/transporter.cgi" method="post" align="right">
                         <input type = "submit" value = "East">
-                        <input type = "hidden" name = "inventory" value = "10,10">
+                        <input type = "hidden" name = "Pinventory" value = "1,0">
                         <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi">
 
                 </form>
@@ -50,19 +50,19 @@
                 </form>
         </div>
 
-        </br></br>
+        </br>
 
         <div id="Directions">
                 <!-- Action will have to point to other room's transporter? -->
-                <form name = "South" action = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/transporter.cgi" method = "post" align="center">
+                <form name = "South" action = "http://www.cs.mcgill.ca/~naharo/cgi-bin/transporter.py" method = "post" align="center">
                         <input type = "submit" value = "South">
-                        <input type = "hidden" name = "inventory" value = "10,10"
+                        <input type = "hidden" name = "Pinventory" value = "1,0"
                         <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi"
 
                 </form>
         </div>
 
-        </br></br>
+        </br>
 
         </body>
 </html>

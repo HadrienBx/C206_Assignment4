@@ -9,7 +9,7 @@
                 </div>
 
         <div id = "background">
-                <center><img src="penthouse.jpg"></center>
+                <center><img src="/cgi-bin/penthouse.jpg"></center>
                 <!-- for when visited directed from url -->
                 <div id="RoomInventory" align="center">
                         <p><b>Room Contains:</b></p>
@@ -44,8 +44,8 @@
  	<div id = "textbox">
                  <!-- The room.cgi should be the compiled (gcc -o) of room.c -->
                 <form name="inputTextbox" action="http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi" method="get" align="center">
-                        <input type="hidden" name="inventory" value="10,10">
-                        <input type="text" name="command" placeholder="Enter your command">
+                        <input type="text" name = "command" placeholder="Enter your command">
+			<input type="hidden" name="inventory" value="10,10">
                         <input type="submit" value = "Enter">
                 </form>
         </div>

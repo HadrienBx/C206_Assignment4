@@ -33,7 +33,6 @@ int main(void){
       rewind(resources);
       fprintf(resources, "%d,%d,%d", rmana, rgp, rocc);
       fclose(resources);
-      return 0;
     }
   }
 
@@ -55,6 +54,7 @@ int main(void){
     printf("\t\t<img src=\"https://i.ytimg.com/vi/vJaAy3jmEx8/maxresdefault.jpg\" align=\"top\" width=\"1263\" height=\"800\" />");
     printf("\t</body>");
     printf("</html>");
+    return 1;
   }
 
 
@@ -67,11 +67,18 @@ int main(void){
   printf("\t</head>");
   printf("\t<body>");
   printf("\t\t<img src=\"penthouse.jpg\" align=\"top\" width=\"1263\" height=\"500\" />");
-  printf("\t\t<form name=\"textbox\" action=\"https://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi\" method=\"get\" >");
-  printf("\t\t\t<input type=\"text\" name=\"command\">");
-  printf("\t\t\t<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">", pmana, pgp);
-  printf("\t\t\t<input type=\"submit\" value=\"Submit\">");
-  if(strcmp(command, "REFRESH") != 0){
+  if(strcmp(command, "PLAY") != 0){
+    printf("\t\t<form name=\"textbox\" action=\"https://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi\" method=\"get\" >");
+    printf("\t\t\t<input type=\"text\" name=\"command\">");
+    printf("\t\t\t<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">", pmana, pgp);
+    printf("\t\t\t<input type=\"submit\" value=\"Submit\">");
+  }else{
+    printf("\t\t<form name=\"playgame\" action=\"https://www.cs.mcgill.ca/~hblamp/cgi-bin/challen.cgi\" method=\"get\" >");
+    printf("\t\t\t<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">", pmana, pgp);
+    printf("\t\t\t<input type=\"submit\" value=\"Play!\">");
+  }
+  //if invalid command
+  if(strcmp(command, "REFRESH") != 0 && strcmp(command, "EXIT") != 0 && strcmp(command, "PLAY") != 0 strcmp(command, "QUIT") != 0 && strstr(command, "DROP+") == NULL){
   printf("\t\t\t</br><b>You did not enter a valid command!</b>");
   }
   printf("\t\t</form>");

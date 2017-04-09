@@ -22,20 +22,20 @@
                 <!-- Action will have to point to other room's transporter? -->
                 <form name = "North" action ="http://www.cs.mcgill.ca/~hblamp/cgi-bin/transporter.cgi" method="post" align ="center">
                         <input type = "submit" value = "North">
-                        <input type = "hidden" name = "Pinventory" value = "1,0">
+                        <input type = "hidden" name = "inventory" value = "1,0">
                         <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi">
                 </form>
         </br>
                 <!-- Action will have to point to other room's transporter? -->
                 <form name = "West" action = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/transporter.cgi" method="post" align="left">
                         <input type = "submit" value = "West">
-                        <input type = "hidden" name = "Pinventory" value = "1,0">
+                        <input type = "hidden" name = "inventory" value = "1,0">
                         <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi">
                 </form>
                 <!-- Action will have to point to other room's transporter? -->
                 <form name = "East" action = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/transporter.cgi" method="post" align="right">
                         <input type = "submit" value = "East">
-                        <input type = "hidden" name = "Pinventory" value = "1,0">
+                        <input type = "hidden" name = "inventory" value = "1,0">
                         <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi">
 
                 </form>
@@ -45,7 +45,7 @@
                  <!-- The room.cgi should be the compiled (gcc -o) of room.c -->
                 <form name="inputTextbox" action="http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi" method="get" align="center">
                         <input type="text" name = "command" placeholder="Enter your command">
-			<input type="hidden" name="inventory" value="10,10">
+			<input type="hidden" name="inventory" value="1,0">
                         <input type="submit" value = "Enter">
                 </form>
         </div>
@@ -56,7 +56,7 @@
                 <!-- Action will have to point to other room's transporter? -->
                 <form name = "South" action = "http://www.cs.mcgill.ca/~naharo/cgi-bin/transporter.py" method = "post" align="center">
                         <input type = "submit" value = "South">
-                        <input type = "hidden" name = "Pinventory" value = "1,0"
+                        <input type = "hidden" name = "inventory" value = "1,0"
                         <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi"
 
                 </form>

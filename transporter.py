@@ -8,7 +8,7 @@ import ctypes
 def transporter (player_inventory, url):
 	
 	# get and reads csv, check if the number on index 2 is 0 or 1
-	f = open('resources.csv')
+	f = open("resources.csv","r")
 	csv_f = csv.reader(f) 
 	form = cgi.FieldStorage()
 	url = form.getvalue('url')
@@ -23,10 +23,13 @@ def transporter (player_inventory, url):
 		if (room_status == 1):
 			print "Content-type: text/html\r\n"
  			print "<html>"
- 			print "<body>"
- 			print "Manna is %s" %(manna)
- 			print "The room is occupied!"
- 			print ('<a href=" "> go back to the previous page </a >' % (url))
+ 			print '<body align = "center">'
+			print '<p> The room you tried to enter is occupied!</br>'
+ 			print "Manna is %s </br>" %(manna)
+ 			print '<form name = "return" action = "' + url +'"' + ' method ="post">'
+			print '<input type ="submit" value = "return">
+			print '</form>'
+			print "</p>
  			print "</body>"
  			print "</html>" 
 
@@ -37,10 +40,6 @@ def transporter (player_inventory, url):
 			# change occupancy field by changing csv field to 0
 			
 			# fo = open ('resources.csv', 'w+')
-			for line in csv_f:
-				values = line.split(',')
-				token[2] = '"1"'
-				fo.write(','.join(token))
 
 		elif (room_status == 0): #room is available
 			 

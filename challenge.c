@@ -40,7 +40,7 @@ int main(void){
 
 
 
-			  if(strcmp(answer, "2") == 0){ //player gets it right
+			  if(strcmp(answer, "footsteps") == 0){ //player gets it right
 			  	printf("\t\t<title>You won! We have %d mana and %d gold. You can take at most 5 units of something.</title>", pmana, pgp);
 			    	
 			    	//player input how many mana and gold they want

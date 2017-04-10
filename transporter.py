@@ -26,7 +26,10 @@ def transporter (player_inventory, url):
  			print '<body align = "center">'
 			print '<p> The room you tried to enter is occupied!</br>'
  			print "Manna is %s </br>" %(manna)
+			
+			#TODO jesus christ i hope this works
  			print '<form name = "return" action = "' + url +'"' + ' method ="post">'
+			print '<input type = "hidden" name = "inventory" value ="' + manna + ',' + gold + '"
 			print '<input type ="submit" value = "return">
 			print '</form>'
 			print "</p>

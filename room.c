@@ -128,7 +128,7 @@ int main(void){
     printf("\t\t\t<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">", pmana, pgp);
     printf("\t\t\t<input type=\"submit\" value=\"Submit\">");
   }else{
-    printf("\t\t<form name=\"playgame\" action=\"https://www.cs.mcgill.ca/~hblamp/cgi-bin/challen.cgi\" method=\"get\" align =\"center\" >");
+    printf("\t\t<form name=\"playgame\" action=\"https://www.cs.mcgill.ca/~hblamp/cgi-bin/challenge.cgi\" method=\"get\" align =\"center\" >");
     printf("\t\t\t<input type=\"hidden\" name=\"command\" value=\"PLAY\">");
     printf("\t\t\t<input type=\"hidden\" name=\"inventory\" value=\"%d,%d\">", pmana, pgp);
     printf("\t\t\t<input type=\"submit\" value=\"Click To Play!\">");

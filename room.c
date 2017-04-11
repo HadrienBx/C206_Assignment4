@@ -151,7 +151,6 @@ int main(void){
   printf("\t\t</br>");
 
 
-  printf("\t\t<p>%s. pmana,pgp=%d,%d rmana,rgp,rocc=%d,%d,%d</p>",command, pmana, pgp, rmana, rgp, rocc);
   printf("\t</body>");
   printf("</html>");
   return 1;

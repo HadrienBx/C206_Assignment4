@@ -14,7 +14,7 @@
                 <div id="RoomPlayerInventory" align="center">
                         <p><b> &emsp; &emsp; &emsp; Room Contains:</b> &emsp; &emsp; &emsp; &emsp; &emsp;<b> Player Inventory:</b></br>
                         Gold: 10 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Gold: 0 </br> Mana: 10 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Mana: 1 </p>
-		</div>
+		            </div>
         </div>
 
         </br></br>
@@ -24,20 +24,20 @@
                 <form name = "North" action ="http://www.cs.mcgill.ca/~malsha24/cgi-bin/transporter.py" method="post" align ="center">
                         <input type = "hidden" name = "inventory" value = "1,0">
                         <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi">
-			<input type = "submit" value = "North">
+			                  <input type = "submit" value = "North">
                 </form>
         </br>
                 <!-- Action will have to point to other room's transporter? -->
                 <form name = "West" action = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/transporter.cgi" method="post" align="left">
-                        <input type = "hidden" name = "inventory" value = "1,0">
-                        <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi">
-			<input type = "submit" value = "West">
+                        <input type = "hidden" name = "inventory" value = "2,0">
+                        <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp">
+			                  <input type = "submit" value = "West">
                 </form>
                 <!-- Action will have to point to other room's transporter? -->
                 <form name = "East" action = "http://cgi.cs.mcgill.ca/jdjame/comp_206_game/transporter.py" method="post" align="right">
                         <input type = "hidden" name = "inventory" value = "1,0">
                         <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi">
-			<input type = "submit" value = "East">
+			                  <input type = "submit" value = "East">
                 </form>
         </div>
 
@@ -45,7 +45,7 @@
                  <!-- The room.cgi should be the compiled (gcc -o) of room.c -->
                 <form name="inputTextbox" action="http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi" method="get" align="center">
                         <input type="text" name = "command" placeholder="Enter your command">
-			<input type="hidden" name="inventory" value="1,0">
+			                  <input type="hidden" name="inventory" value="1,0">
                         <input type="submit" value = "Enter">
                 </form>
         </div>
@@ -57,7 +57,7 @@
                 <form name = "South" action = "http://www.cs.mcgill.ca/~naharo/cgi-bin/transporter.py" method = "post" align="center">
                         <input type = "hidden" name = "inv" value = "1,0">
                         <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi">
-			<input type = "submit" value = "South">
+			                  <input type = "submit" value = "South">
                 </form>
         </div>
 

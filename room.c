@@ -103,20 +103,20 @@ int main(void){
 
   printf("\t\t<div id=\"Directions\">");
   printf("\t\t\t<form name = \"North\" action =\"http://www.cs.mcgill.ca/~malsha24/cgi-bin/transporter.py\" method=\"post\" align =\"center\">");
-  printf("\t\t\t\t<input type = \"submit\" value = \"North\">");
   printf("\t\t\t\t<input type = \"hidden\" name = \"inventory\" value =\"%d,%d\">", pmana, pgp);
   printf("\t\t\t\t<input type = \"hidden\" name = \"url\" value = \"http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi\">");
+  printf("\t\t\t\t<input type = \"submit\" value = \"North\">");
   printf("\t\t\t</form>");
   printf("\t\t</br>");
   printf("\t\t\t<form name = \"West\" action =\"http://www.cs.mcgill.ca/~hblamp/cgi-bin/transporter.cgi\" method=\"post\" align =\"left\">");
-  printf("\t\t\t\t<input type = \"submit\" value = \"West\">");
   printf("\t\t\t\t<input type = \"hidden\" name = \"inventory\" value =\"%d,%d\">", pmana, pgp);
-  printf("\t\t\t\t<input type = \"hidden\" name = \"url\" value = \"http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi\">");
+  printf("\t\t\t\t<input type = \"hidden\" name = \"url\" value = \"http://www.cs.mcgill.ca/~hblamp\">");
+  printf("\t\t\t\t<input type = \"submit\" value = \"West\">");
   printf("\t\t\t</form>");
   printf("\t\t\t<form name = \"East\" action =\"http://cgi.cs.mcgill.ca/jdjame/comp_206_game/transporter.py\" method=\"post\" align =\"right\">");
-  printf("\t\t\t\t<input type = \"submit\" value = \"East\">");
   printf("\t\t\t\t<input type = \"hidden\" name = \"inventory\" value =\"%d,%d\">", pmana, pgp);
   printf("\t\t\t\t<input type = \"hidden\" name = \"url\" value = \"http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi\">");
+  printf("\t\t\t\t<input type = \"submit\" value = \"East\">");
   printf("\t\t\t</form>");
   printf("\t\t</div>");
 

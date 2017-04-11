@@ -36,19 +36,22 @@ def transporter():
 	print "<title> Teleporting </title>"
 	print "</head>"
 	print "<body>"
+	print "</br><p>rmana= ", rmana, " pmana= ", pmana, "</p></br>"
+	print "</br><p>pinv= ", pinv, "</p></br>"
+
 	print "</br></br></br></br></br>"
 	if int(rocc) == 0 and int(pmana) >= 1:
 		#output = int(rmana),int(rgp),1
 		#print "<p>", output, "</p>"
 		#print "<p>", rmana,",",rgp,",1", "</p>"
-		#int(pmana) -= 1
-		#int(rmana) += 1
-		if int(pmana) == 0:
+		npmana = int(pmana) - 1
+		nrmana = int(rmana) + 1
+		if int(npmana) == 0:
 			# => room.cgi => registers pmana=0 => game over screen
 			print "<h1 align=\"center\"> Out of Manna! Game Over! </h1></br></br></br>"
 			print "<form name=\"gameover\" action=\"http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi\" method=\"get\" align=\"center\" >"
-			print "<input type=\"hidden\" name=\"command\" value=\"REFRESH\" >"
-			print "<input type=\"hidden\" name=\"inventory\" value=\"0,10\" >"
+			print "<input type=\"hidden\" name=\"command\" value=\"EXIT\" >"
+			print "<input type=\"hidden\" name=\"inventory\" value=\"1,",pgp,"\" >"
 			print "<input type=\"submit\" value=\"Click to Exit!\" >"
 			print "</br></br></br>"
 		else:
@@ -56,7 +59,7 @@ def transporter():
 			#MUST CALL success.py somehow!
 			f = open('resources.csv', 'r+')
 			f.seek(0)
-			f.write(rmana)
+			f.write(nrmana)
 			f.write(',')
 			f.write(rgp)
 			f.write(',1')

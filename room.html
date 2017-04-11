@@ -44,11 +44,13 @@
  	<div id = "textbox">
                  <!-- The room.cgi should be the compiled (gcc -o) of room.c -->
                 <form name="inputTextbox" action="http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi" method="get" align="center">
-                        <input type="text" name = "command" placeholder="Enter your command">
-			                  <input type="hidden" name="inventory" value="1,0">
+                        <input type="text" name = "command" placeholder="Enter your command in ALL CAPS">
+			<input type="hidden" name="inventory" value="1,0">
                         <input type="submit" value = "Enter">
                 </form>
         </div>
+	</br>
+		<p align = "center"> Type "PLAY" to begin the game, and get enough manna to teleport to another room!</p>
 
         </br>
 
@@ -57,7 +59,7 @@
                 <form name = "South" action = "http://www.cs.mcgill.ca/~naharo/cgi-bin/transporter.py" method = "post" align="center">
                         <input type = "hidden" name = "inv" value = "1,0">
                         <input type = "hidden" name = "url" value = "http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi">
-			                  <input type = "submit" value = "South">
+			<input type = "submit" value = "South">
                 </form>
         </div>
 

@@ -48,7 +48,8 @@ def transporter():
 		nrmana = int(rmana) + 1
 		if int(npmana) == 0:
 			# => room.cgi => registers pmana=0 => game over screen
-			print "<h1 align=\"center\"> Out of Manna! Game Over! </h1></br></br></br>"
+			print "<h1 align=\"center\"> Out of Manna! Game Over! </h1></br>"
+			print "<h3> align =\"center\"> You used your last piece of manna to teleport to this room. Your journey comes to an end here.</h3></br>"
 			print "<form name=\"gameover\" action=\"http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi\" method=\"get\" align=\"center\" >"
 			print "<input type=\"hidden\" name=\"command\" value=\"EXIT\" >"
 			print "<input type=\"hidden\" name=\"inventory\" value=\"1,",pgp,"\" >"

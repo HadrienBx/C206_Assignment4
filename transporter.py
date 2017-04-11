@@ -36,26 +36,20 @@ def transporter():
 	print "<title> Teleporting </title>"
 	print "</head>"
 	print "<body>"
-	#print "</br><p>rmana= ", rmana, " pmana= ", pmana, "</p></br>"
-	#print "</br><p>pinv= ", pinv, "</p></br>"
-
 	print "</br></br></br></br></br>"
 	if int(rocc) == 0 and int(pmana) >= 1:
 		npmana = int(pmana) - 1
 		nrmana = int(rmana) + 1
-		#print "</br>rmana= ", rmana, " pmana= ", pmana, "</br>"
-		#print "</br> url=\"",url,"cgi\" </br>"
-		#print "</br> yourl=\""+url+"cgi\" </br>"
-		#print "</br>yoovalue=\"",npmana,",",pgp,"\" </br>"
-		#print "</br>yoovalue=\"",nrmana,",",rgp,"\" </br>"
-		#print "</br>value=\""+npmana+","+pgp+"\" </br>"
 		if int(npmana) == 0:
 			# => room.cgi => registers pmana=0 => game over screen
+			print "<object type=\"text/html\" width=\"0\" height=\"0\" data=\""+url+"/cgi-bin/success.py\" >"
+			print "</object>"
 			print "<h1 align=\"center\"> Out of Manna! Game Over! </h1></br></br></br>"
 			print "<form name=\"gameover\" action=\"http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi\" method=\"get\" align=\"center\" >"
 			print "<input type=\"hidden\" name=\"command\" value=\"EXIT\" >"
 			print "<input type=\"hidden\" name=\"inventory\" value=\"1,"+pgp+"\" >"
 			print "<input type=\"submit\" value=\"Click to Exit!\" >"
+			print "</form>"
 			print "</br></br></br>"
 		else:
 			#enter room!
@@ -68,11 +62,14 @@ def transporter():
 			f.write(',1')
 			#f.truncate()
 			f.close()
+			print "<object type=\"text/html\" width=\"0\" height=\"0\" data=\""+url+"/cgi-bin/success.py\" >"
+			print "</object>"
 			print "<h1 align=\"center\"> Teleport Successful! </h1></br></br></br>"
 			print "<form name=\"EnterRoom\" action=\"http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi\" method=\"get\" align=\"center\" >"
 			print "<input type=\"hidden\" name=\"command\" value=\"REFRESH\" >"
 			print "<input type=\"hidden\" name=\"inventory\" value=\""+str(npmana)+","+pgp+"\" >"
 			print "<input type=\"submit\" value=\"Click to Enter Room!\" >"
+			print "</form>"
 			print "</br></br></br>"
 	else:
 		print "<h1 align=\"center\"> Room Full! </h1></br></br></br>"
@@ -80,8 +77,8 @@ def transporter():
 		print "<input type=\"hidden\" name=\"command\" value=\"REFRESH\" >"
 		print "<input type=\"hidden\" name=\"inventory\" value=\""+pmana+","+pgp+"\" >"
 		print "<input type=\"submit\" value=\"Click to Go Back!\" >"
+		print "</form>"
 		print "</br></br></br>"
-	print "</br></br></br></br></br></br></br><p>rmana= ", rmana, " rgp= ", rgp, " rocc= ", rocc, "</br> url= ", url, " pmana= ", pmana, " pgp", pgp, "</p>"
 	print "</body>"
 	print "</html>"
 

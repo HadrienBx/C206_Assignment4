@@ -108,7 +108,7 @@ int main(void){
   printf("\t\t\t\t<input type = \"submit\" value = \"North\">");
   printf("\t\t\t</form>");
   printf("\t\t</br>");
-  printf("\t\t\t<form name = \"West\" action =\"http://www.cs.mcgill.ca/~hblamp/cgi-bin/transporter.cgi\" method=\"post\" align =\"left\">");
+  printf("\t\t\t<form name = \"West\" action =\"http://www.cs.mcgill.ca/~hblamp/cgi-bin/transporter.py\" method=\"post\" align =\"left\">");
   printf("\t\t\t\t<input type = \"hidden\" name = \"inventory\" value =\"%d,%d\">", pmana, pgp);
   printf("\t\t\t\t<input type = \"hidden\" name = \"url\" value = \"http://www.cs.mcgill.ca/~hblamp\">");
   printf("\t\t\t\t<input type = \"submit\" value = \"West\">");

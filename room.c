@@ -84,7 +84,7 @@ int main(void){
   printf("Content-Type: text/html\n\n");
   printf("<html lang=\"en\">");
   printf("\t<head>");
-  printf("\t\t<title>The Name</title>");
+  printf("\t\t<title>The Room</title>");
   printf("\t</head>");
 
   printf("\t<body style=\"background-color:lightgrey\">");
@@ -104,18 +104,18 @@ int main(void){
   printf("\t\t<div id=\"Directions\">");
   printf("\t\t\t<form name = \"North\" action =\"http://www.cs.mcgill.ca/~malsha24/cgi-bin/transporter.py\" method=\"post\" align =\"center\">");
   printf("\t\t\t\t<input type = \"hidden\" name = \"inventory\" value =\"%d,%d\">", pmana, pgp);
-  printf("\t\t\t\t<input type = \"hidden\" name = \"url\" value = \"http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi\">");
+  printf("\t\t\t\t<input type = \"hidden\" name = \"url\" value = \"http://www.cs.mcgill.ca/~hblamp\">");
   printf("\t\t\t\t<input type = \"submit\" value = \"North\">");
   printf("\t\t\t</form>");
   printf("\t\t</br>");
-  printf("\t\t\t<form name = \"West\" action =\"http://www.cs.mcgill.ca/~hblamp/cgi-bin/transporter.py\" method=\"post\" align =\"left\">");
+  printf("\t\t\t<form name = \"West\" action =\"http://www.cs.mcgill.ca/~rke/cgi-bin/transporter.py\" method=\"post\" align =\"left\">");
   printf("\t\t\t\t<input type = \"hidden\" name = \"inventory\" value =\"%d,%d\">", pmana, pgp);
   printf("\t\t\t\t<input type = \"hidden\" name = \"url\" value = \"http://www.cs.mcgill.ca/~hblamp\">");
   printf("\t\t\t\t<input type = \"submit\" value = \"West\">");
   printf("\t\t\t</form>");
   printf("\t\t\t<form name = \"East\" action =\"http://cgi.cs.mcgill.ca/jdjame/comp_206_game/transporter.py\" method=\"post\" align =\"right\">");
   printf("\t\t\t\t<input type = \"hidden\" name = \"inventory\" value =\"%d,%d\">", pmana, pgp);
-  printf("\t\t\t\t<input type = \"hidden\" name = \"url\" value = \"http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi\">");
+  printf("\t\t\t\t<input type = \"hidden\" name = \"url\" value = \"http://www.cs.mcgill.ca/~hblamp\">");
   printf("\t\t\t\t<input type = \"submit\" value = \"East\">");
   printf("\t\t\t</form>");
   printf("\t\t</div>");
@@ -142,9 +142,9 @@ int main(void){
   printf("\t\t</br>");
 
   printf("\t\t<div id=\"Directions\">");
-  printf("\t\t\t<form name = \"South\" action =\"http://www.cs.mcgill.ca/~naharo/cgi-bin/transporter.py\" method=\"post\" align =\"center\">");
+  printf("\t\t\t<form name = \"South\" action =\"http://www.cgi.cs.mcgill.ca/~bcumin1/cgi-bin/transporter.py\" method=\"post\" align =\"center\">");
   printf("\t\t\t\t<input type = \"hidden\" name = \"inv\" value =\"%d,%d\">", pmana, pgp);
-  printf("\t\t\t\t<input type = \"hidden\" name = \"url\" value = \"http://www.cs.mcgill.ca/~hblamp/cgi-bin/room.cgi\">");
+  printf("\t\t\t\t<input type = \"hidden\" name = \"url\" value = \"http://www.cs.mcgill.ca/~hblamp\">");
   printf("\t\t\t\t<input type = \"submit\" value = \"South\">");
   printf("\t\t\t</form>");
   printf("\t\t</div>");

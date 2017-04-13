@@ -29,6 +29,21 @@ def transporter():
 	pmana = valuser[0]
 	pgp = valuser[1]
 
+	#Parse url for user, assign a number to each user
+	user_var = 0
+	#jdjame is 1
+	if "jdjame" in url
+		user_var = 1
+	#rke is 2
+	elif "rke" in url
+		user_var = 2
+	#bcumin1 is 3
+	elif "bcumin1" in url
+		user_var = 3
+	#malsha24 is 4
+	elif "malsha24" in url
+		user_var = 4
+	
 	#print
 	print "Content-type: text/html\n\n"
 	print "<html>"
@@ -72,13 +87,28 @@ def transporter():
 			print "</form>"
 			print "</br></br></br>"
 	else:
-		print "<h1 align=\"center\"> Room Full! </h1></br></br></br>"
-		print "<form name=\"roomfull\" action=\""+url+"/cgi-bin/room.cgi\" method=\"get\" align=\"center\" >"
-		print "<input type=\"hidden\" name=\"command\" value=\"REFRESH\" >"
-		print "<input type=\"hidden\" name=\"inventory\" value=\""+pmana+","+pgp+"\" >"
-		print "<input type=\"submit\" value=\"Click to Go Back!\" >"
-		print "</form>"
-		print "</br></br></br>"
+		#room is full
+	
+		if user_var == 1
+			#print form for JDJAME
+
+		elif user_var = 2
+			#print form for RKE
+
+		elif user_var = 3
+			#print var for BCUMIN1
+
+		elif user_var = 4
+			#print form for MALSHA24
+
+		#OLD NON-specific version			
+		#print "<h1 align=\"center\"> Room Full! </h1></br></br></br>"
+		#print "<form name=\"roomfull\" action=\""+url+"/cgi-bin/room.cgi\" method=\"get\" align=\"center\" >"
+		#print "<input type=\"hidden\" name=\"command\" value=\"REFRESH\" >"
+		#print "<input type=\"hidden\" name=\"inventory\" value=\""+pmana+","+pgp+"\" >"
+		#print "<input type=\"submit\" value=\"Click to Go Back!\" >"
+		#print "</form>"
+		#print "</br></br></br>"
 	print "</body>"
 	print "</html>"
 

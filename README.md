@@ -22,14 +22,14 @@ Rooms we are linked to:
     
   S:
       Linked to us?: Yes
-    Contact name: Noga Aharony
-    URL: 
-    transport.py URL: http://cs.mcgill.ca/~naharo/cgi-bin/transporter.by
+    Contact name: Baptiste Cumin
+    URL: http://cgi.cs.mcgill.ca/~bcumin1/room.html
+    transport.py URL: http://cgi.cs.mcgill.ca/~bcumin1/cgi-bin/transporter.py
     
   W:
       Linked to us?:
-    Contact name:
-    URL:
-    transport.py URL:
+    Contact name: Lily (Rui) Ke
+    URL: http://cgi.cs.mcgill.ca/~rke/jungleroom
+    transport.py URL: http://cs.mcgill.ca/~rke/cgi-bin/transporter.py
   
   

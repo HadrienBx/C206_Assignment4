@@ -6,6 +6,7 @@ import csv
 import math
 import urllib2
 import ctypes
+import string
 
 def transporter():
 
@@ -29,21 +30,22 @@ def transporter():
 	pmana = valuser[0]
 	pgp = valuser[1]
 
-	#Parse url for user, assign a number to each user
-	user_var = 0
+	#parse for user to print personalized form
+	userurl = str(url)
 	#jdjame is 1
-	if "jdjame" in url
+	if "jdjame" in userurl:
 		user_var = 1
 	#rke is 2
-	elif "rke" in url
+	elif "rke" in userurl:
 		user_var = 2
 	#bcumin1 is 3
-	elif "bcumin1" in url
+	elif "bcumin1" in userurl:
 		user_var = 3
 	#malsha24 is 4
-	elif "malsha24" in url
+	elif "malsha24" in userurl:
 		user_var = 4
-	
+
+
 	#print
 	print "Content-type: text/html\n\n"
 	print "<html>"
@@ -88,27 +90,51 @@ def transporter():
 			print "</br></br></br>"
 	else:
 		#room is full
-	
-		if user_var == 1
+
+		if user_var == 1:
 			#print form for JDJAME
+			print "<h1 align=\"center\"> Room Full! </h1></br></br></br>"
+			print "<form name=\"roomfull\" action=\""+url+"/comp_206_game/cgi-bin/room.cgi\" method=\"get\" align=\"center\" >"
+			print "<input type=\"hidden\" name=\"command\" value=\"refresh\" >"
+			print "<input type=\"hidden\" name=\"inventory\" value=\""+pmana+","+pgp+"\" >"
+			print "<input type=\"hidden\" name=\"url\" value=\"dummyurl\" >"
+			print "<input type=\"submit\" value=\"Click to Go Back!\" >"
+			print "</form>"
+			print "</br></br></br>"
 
-		elif user_var = 2
+		elif user_var == 2:
 			#print form for RKE
+			print "<h1 align=\"center\"> Room Full! </h1></br></br></br>"
+			print "<form name=\"roomfull\" action=\""+url+"/cgi-bin/room.cgi\" method=\"get\" align=\"center\" >"
+			print "<input type=\"hidden\" name=\"inventory\" value=\""+pmana+","+pgp+"\" >"
+			print "<input type=\"hidden\" name=\"cmd\" value=\"REFRESH\" >"
+			print "<input type=\"submit\" value=\"Click to Go Back!\" >"
+			print "</form>"
+			print "</br></br></br>"
 
-		elif user_var = 3
+		elif user_var == 3:
 			#print var for BCUMIN1
+			print "<h1 align=\"center\"> Room Full! </h1></br></br></br>"
+			print "<form name=\"roomfull\" action=\""+url+"/cgi-bin/room.cgi\" method=\"get\" align=\"center\" >"
+			print "<input type=\"hidden\" name=\"inventory\" value=\""+pmana+","+pgp+"\" >"
+			print "<input type=\"hidden\" name=\"user_input\" value=\"REFRESH\" >"
+			print "<input type=\"submit\" value=\"Click to Go Back!\" >"
+			print "</form>"
+			print "</br></br></br>"
 
-		elif user_var = 4
+		#elif user_var == 4:
 			#print form for MALSHA24
 
-		#OLD NON-specific version			
-		#print "<h1 align=\"center\"> Room Full! </h1></br></br></br>"
-		#print "<form name=\"roomfull\" action=\""+url+"/cgi-bin/room.cgi\" method=\"get\" align=\"center\" >"
-		#print "<input type=\"hidden\" name=\"command\" value=\"REFRESH\" >"
-		#print "<input type=\"hidden\" name=\"inventory\" value=\""+pmana+","+pgp+"\" >"
-		#print "<input type=\"submit\" value=\"Click to Go Back!\" >"
-		#print "</form>"
-		#print "</br></br></br>"
+		else:
+			#OLD NON-specific version
+			print "<h1 align=\"center\"> Room Full! </h1></br></br></br>"
+			print "<form name=\"roomfull\" action=\""+url+"/cgi-bin/room.cgi\" method=\"get\" align=\"center\" >"
+			print "<input type=\"hidden\" name=\"command\" value=\"REFRESH\" >"
+			print "<input type=\"hidden\" name=\"inventory\" value=\""+pmana+","+pgp+"\" >"
+			print "<input type=\"submit\" value=\"Click to Go Back!\" >"
+			print "</form>"
+			print "</br></br></br>"
+
 	print "</body>"
 	print "</html>"
 

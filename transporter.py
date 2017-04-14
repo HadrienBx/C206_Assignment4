@@ -33,7 +33,7 @@ def transporter():
 	#parse for user to print personalized form
 	userurl = str(url)
 	#jdjame is 1
-	if "jdjame" in userurl:
+	if "amoris5" in userurl:
 		user_var = 1
 	#rke is 2
 	elif "rke" in userurl:
@@ -77,7 +77,7 @@ def transporter():
 			f.write(',')
 			f.write(rgp)
 			f.write(',1')
-			#f.truncate()
+			f.truncate()
 			f.close()
 			print "<object type=\"text/html\" width=\"0\" height=\"0\" data=\""+url+"/cgi-bin/success.py\" >"
 			print "</object>"
@@ -92,12 +92,11 @@ def transporter():
 		#room is full
 
 		if user_var == 1:
-			#print form for JDJAME
+			#print form for amoris5
 			print "<h1 align=\"center\"> Room Full! </h1></br></br></br>"
-			print "<form name=\"roomfull\" action=\""+url+"/comp_206_game/cgi-bin/room.cgi\" method=\"get\" align=\"center\" >"
-			print "<input type=\"hidden\" name=\"command\" value=\"refresh\" >"
-			print "<input type=\"hidden\" name=\"inventory\" value=\""+pmana+","+pgp+"\" >"
-			print "<input type=\"hidden\" name=\"url\" value=\"dummyurl\" >"
+			print "<form name=\"roomfull\" action=\""+url+"/cgi-bin/room.cgi\" method=\"post\" align=\"center\" >"
+			print "<input type=\"hidden\" name=\"Input_here\" value=\"REFRESH\" >"
+			print "<input type=\"hidden\" name=\"inventory\" value=\""+pmana+","+pgp+".\" >"
 			print "<input type=\"submit\" value=\"Click to Go Back!\" >"
 			print "</form>"
 			print "</br></br></br>"

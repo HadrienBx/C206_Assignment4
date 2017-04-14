@@ -27,4 +27,13 @@ def success():
 	#f.truncate()
 	f.close()
 
+	print "Content-type: text/html\n\n"
+	print "<html>"
+	print "<head>"
+	print "<title> Teleporting </title>"
+	print "</head>"
+	print "<body>"
+	print "</body>"
+	print "</html>"
+
 success()

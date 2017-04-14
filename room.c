@@ -143,7 +143,7 @@ int main(void){
 
   printf("\t\t<div id=\"Directions\">");
   printf("\t\t\t<form name = \"South\" action =\"http://www.cgi.cs.mcgill.ca/~bcumin1/cgi-bin/transporter.py\" method=\"post\" align =\"center\">");
-  printf("\t\t\t\t<input type = \"hidden\" name = \"inv\" value =\"%d,%d\">", pmana, pgp);
+  printf("\t\t\t\t<input type = \"hidden\" name = \"inventory\" value =\"%d,%d\">", pmana, pgp);
   printf("\t\t\t\t<input type = \"hidden\" name = \"url\" value = \"http://www.cs.mcgill.ca/~hblamp\">");
   printf("\t\t\t\t<input type = \"submit\" value = \"South\">");
   printf("\t\t\t</form>");
